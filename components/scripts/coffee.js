@@ -1,4 +1,4 @@
-var arr10, arr9, arr_names, ref, str, user,
+var arr10, arr9, arr_names, dance, happy, name, ref, str, user,
   splice = [].splice;
 
 arr10 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -40,3 +40,35 @@ $(function() {
 (function() {
   return $('#content').append('Don\'t miss it!');
 })();
+
+name = "Ahmed";
+
+if (name === "Ahmed") {
+  console.log(name);
+}
+
+if (name === "Ahmed") {
+  console.log(`is ${name}`);
+}
+
+if (name === "Ahmed") {
+  console.log(name);
+} else {
+  console.log(name);
+}
+
+if (name !== "Ahmed") {
+  console.log(name);
+} else {
+  console.log(`isnt ${name}`);
+}
+
+dance = function() {
+  return alert("He");
+};
+
+happy = true;
+
+if (happy === true) {
+  dance();
+}

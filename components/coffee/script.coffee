@@ -37,3 +37,28 @@ $ ->
 
 do ->
     $('#content').append 'Don\'t miss it!'
+
+
+name = "Ahmed"
+
+if name == "Ahmed" then console.log name
+
+console.log "is #{name}" if name is "Ahmed"
+
+if name == "Ahmed"
+    console.log name
+else
+    console.log name
+
+if name isnt "Ahmed"
+    console.log name
+else
+    console.log "isnt #{name}"
+
+dance = ->
+    alert "He"
+
+happy = true
+
+dance() if happy is true
+dance() if unnull_varable?
