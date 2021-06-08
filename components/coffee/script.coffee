@@ -112,3 +112,13 @@ fillOut = (name, links...) ->
         console.log "Link: #{i}. #{link}"
 
 fillOut info_arr...
+
+append = (item) ->
+    $('#content').append item
+
+author = "Ahmed"
+
+switch author
+    when 'Alaa' then append " Alaa"
+    when 'James', 'Ahmed' then append " James and Ahmed"
+    else append " Null"

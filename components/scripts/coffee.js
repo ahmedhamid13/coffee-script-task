@@ -1,4 +1,4 @@
-var arr10, arr9, arr_names, fillOut, hi, i, info, info_arr, j, k, key, len, len1, myFunction, name, names, ref, str, user, value,
+var append, arr10, arr9, arr_names, author, fillOut, hi, i, info, info_arr, j, k, key, len, len1, myFunction, name, names, ref, str, user, value,
   splice = [].splice;
 
 arr10 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -109,7 +109,7 @@ info_arr = ["ahmed", "http://www....com", "http://www....com", "http://www....co
 
 fillOut = function(name, ...links) {
   var l, len2, link, results;
-  console.log(name);
+  console.log(`name ${name}`);
   results = [];
   for (i = l = 0, len2 = links.length; l < len2; i = ++l) {
     link = links[i];
@@ -119,3 +119,21 @@ fillOut = function(name, ...links) {
 };
 
 fillOut(...info_arr);
+
+append = function(item) {
+  return $('#content').append(item);
+};
+
+author = "Ahmed";
+
+switch (author) {
+  case 'Alaa':
+    append(' Alaa');
+    break;
+  case 'James':
+  case 'Ahmed':
+    append(" James and Ahmed");
+    break;
+  default:
+    append(" Null");
+}
