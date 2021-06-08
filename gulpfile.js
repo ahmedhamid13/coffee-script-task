@@ -12,6 +12,7 @@ let gulp = require('gulp'),
 const sassSources = ['./components/sass/*.scss'];
 gulp.task('sass', function () {
     return sass(sassSources, {style: 'expanded', lineNumbers: true})
+                .on('error', gutil.log)
             .pipe(concat('style.css'))
             .pipe(gulp.dest('./css'))
             .pipe(livereload());
@@ -21,6 +22,7 @@ const coffeeSources = ['./components/coffee/*.coffee'];
 gulp.task('coffee', function() {
     return gulp.src(coffeeSources)
             .pipe(coffee({bare: true}))
+                .on('error', gutil.log)
             .pipe(concat('coffee.js'))
             .pipe(gulp.dest('./components/scripts'));
 });
@@ -28,6 +30,7 @@ gulp.task('coffee', function() {
 const jsSources = ['./components/lib/jquery/jquery.js', './components/scripts/*.js'];
 gulp.task('js', function () {
     return gulp.src(jsSources)
+                .on('error', gutil.log)
             .pipe(uglify())
             .pipe(concat('script.js'))
             .pipe(gulp.dest('./js'));
@@ -37,8 +40,8 @@ gulp.task('js', function () {
 gulp.task('watch', function(){
     livereload.listen();
     gulp.watch(sassSources, gulp.series('sass'));
-    gulp.watch(jsSources, gulp.series('js'));
     gulp.watch(coffeeSources, gulp.series('coffee'));
+    gulp.watch(jsSources, gulp.series('js'));
     gulp.watch(['./js/script.js', '*.html'], gulp.series('reload'));
 });
 
