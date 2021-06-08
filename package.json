@@ -1,0 +1,17 @@
+{
+    "name": "My App",
+    "version": "0.0.0",
+    "description": "this is app description",
+    "author": "Ahmed Abdelhamid",
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "gulp-coffee": "^3.0.3",
+        "gulp-concat": "^2.6.1",
+        "gulp-livereload": "^4.0.2",
+        "gulp-ruby-sass": "^4.0.0",
+        "gulp-uglify": "^3.0.2",
+        "gulp-util": "^3.0.8",
+        "tiny-lr": "^2.0.0"
+    },
+    "dependencies": {}
+}
