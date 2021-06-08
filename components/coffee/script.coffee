@@ -7,6 +7,8 @@ arr_names = [
     "Ahmed"
     "Abd"
     "Elhamid"
+    "Ali"
+    "Osman"
 ]
 user = 
     name: "Ahmed"
@@ -20,6 +22,12 @@ user =
         tw: "tw"
 
 console.log arr_names
+console.log arr_names[0..2]
+
+arr_names[0..2] = ["Alaa", "Walaa", "Wafaa"]
+
+console.log arr_names[0..2]
+
 console.log user
 
 str = "<i>#{user.name}</i>"

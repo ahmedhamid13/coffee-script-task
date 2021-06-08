@@ -1,4 +1,5 @@
-var arr10, arr9, arr_names, str, user;
+var arr10, arr9, arr_names, ref, str, user,
+  splice = [].splice;
 
 arr10 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
@@ -8,7 +9,7 @@ console.log(arr10);
 
 console.log(arr9);
 
-arr_names = ["Ahmed", "Abd", "Elhamid"];
+arr_names = ["Ahmed", "Abd", "Elhamid", "Ali", "Osman"];
 
 user = {
   name: "Ahmed",
@@ -21,6 +22,12 @@ user = {
 };
 
 console.log(arr_names);
+
+console.log(arr_names.slice(0, 3));
+
+splice.apply(arr_names, [0, 3].concat(ref = ["Alaa", "Walaa", "Wafaa"])), ref;
+
+console.log(arr_names.slice(0, 3));
 
 console.log(user);
 
