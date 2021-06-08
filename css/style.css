@@ -1,4 +1,9 @@
-/* line 3, ./components/sass/main.scss */
+/* line 4, ./components/sass/main.scss */
 body {
-  background-color: grey;
+  background-color: #dfdfdf;
+}
+
+/* line 8, ./components/sass/main.scss */
+.content {
+  color: red;
 }

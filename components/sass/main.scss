@@ -1,5 +1,10 @@
-$mainColor: grey;
+$mainColor: rgb(223, 223, 223);
+$redColor: red;
 
 body {
     background-color: $mainColor;
+}
+
+.content {
+    color: $redColor;
 }
