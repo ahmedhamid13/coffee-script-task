@@ -17,7 +17,7 @@ gulp.task('sass', function () {
             .pipe(livereload())
 });
 
-const jsSources = ['./components/scripts/scriptOne.js', './components/scripts/scriptTwo.js'];
+const jsSources = ['./components/lib/jquery/jquery.js', './components/scripts/scriptOne.js', './components/scripts/scriptTwo.js'];
 
 gulp.task('js', function () {
     return gulp.src(jsSources)
