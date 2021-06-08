@@ -1,4 +1,4 @@
-var arr10, arr9, arr_names, dance, happy, name, ref, str, user,
+var arr10, arr9, arr_names, i, info, j, k, key, len, len1, name, names, ref, str, user, value,
   splice = [].splice;
 
 arr10 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -63,12 +63,32 @@ if (name !== "Ahmed") {
   console.log(`isnt ${name}`);
 }
 
-dance = function() {
-  return alert("He");
+// dance = ->
+//     alert "He"
+
+// happy = true
+
+// dance() if happy is true
+// dance() if unnull_varable?
+names = ["name1", "name2", "name3", "name4", "name5", "name6", "name7", "name8", "name9"];
+
+for (j = 0, len = names.length; j < len; j++) {
+  name = names[j];
+  console.log(name);
+}
+
+for (i = k = 0, len1 = names.length; k < len1; i = ++k) {
+  name = names[i];
+  console.log(`${i}. ${name}`);
+}
+
+info = {
+  name: "Ahmed",
+  contact: "012123",
+  age: 23
 };
 
-happy = true;
-
-if (happy === true) {
-  dance();
+for (key in info) {
+  value = info[key];
+  console.log(`${key}: ${value}`);
 }

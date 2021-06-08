@@ -55,10 +55,36 @@ if name isnt "Ahmed"
 else
     console.log "isnt #{name}"
 
-dance = ->
-    alert "He"
+# dance = ->
+#     alert "He"
 
-happy = true
+# happy = true
 
-dance() if happy is true
-dance() if unnull_varable?
+# dance() if happy is true
+# dance() if unnull_varable?
+
+names = [
+    "name1"
+    "name2"
+    "name3"
+    "name4"
+    "name5"
+    "name6"
+    "name7"
+    "name8"
+    "name9"
+]
+
+for name in names
+    console.log name
+
+for name, i in names
+    console.log "#{i}. #{name}"
+
+info = 
+    name: "Ahmed"
+    contact: "012123"
+    age: 23
+
+for key, value of info
+    console.log "#{key}: #{value}"
