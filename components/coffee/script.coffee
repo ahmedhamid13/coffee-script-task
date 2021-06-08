@@ -88,3 +88,27 @@ info =
 
 for key, value of info
     console.log "#{key}: #{value}"
+
+myFunction = ->
+    "my Function"
+
+console.log myFunction()
+
+hi = (name) ->
+    "Hi #{name}"
+
+console.log hi("ahmed")
+
+info_arr = [
+    "ahmed"
+    "http://www....com"
+    "http://www....com"
+    "http://www....com"
+]
+
+fillOut = (name, links...) ->
+    console.log "name #{name}"
+    for link, i in links
+        console.log "Link: #{i}. #{link}"
+
+fillOut info_arr...

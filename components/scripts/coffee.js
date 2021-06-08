@@ -1,4 +1,4 @@
-var arr10, arr9, arr_names, i, info, j, k, key, len, len1, name, names, ref, str, user, value,
+var arr10, arr9, arr_names, fillOut, hi, i, info, info_arr, j, k, key, len, len1, myFunction, name, names, ref, str, user, value,
   splice = [].splice;
 
 arr10 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -92,3 +92,30 @@ for (key in info) {
   value = info[key];
   console.log(`${key}: ${value}`);
 }
+
+myFunction = function() {
+  return "my Function";
+};
+
+console.log(myFunction());
+
+hi = function(name) {
+  return `Hi ${name}`;
+};
+
+console.log(hi("ahmed"));
+
+info_arr = ["ahmed", "http://www....com", "http://www....com", "http://www....com"];
+
+fillOut = function(name, ...links) {
+  var l, len2, link, results;
+  console.log(name);
+  results = [];
+  for (i = l = 0, len2 = links.length; l < len2; i = ++l) {
+    link = links[i];
+    results.push(console.log(`Link: ${i}. ${link}`));
+  }
+  return results;
+};
+
+fillOut(...info_arr);
